@@ -1,60 +1,55 @@
-import logo from "@/assets/logo.png";
+import { Lock } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-20">
+    <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-serif leading-tight">
+        {/* Top section — Chapter heading */}
+        <div className="mb-16">
+          <span className="inline-block text-[10px] font-sans uppercase tracking-[0.25em] text-gold mb-4">
+            CHAPTER IV: THE ART OF CURATION
+          </span>
+          <h2 className="text-4xl md:text-6xl font-serif leading-tight">
             Redefining the
-            <br />
-            <span className="italic">Social Fabric</span>
-            <br />
+          </h2>
+          <h2 className="text-4xl md:text-6xl font-serif italic text-gold leading-tight">
+            Social Fabric
+          </h2>
+          <h2 className="text-4xl md:text-6xl font-serif leading-tight">
             of Success.
           </h2>
-        </div>
-
-        <div className="border-t border-primary-foreground/20 pt-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-            <div>
-              <img src={logo} alt="Lunch Actually" className="h-8 brightness-0 invert mb-4" />
-              <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed">
-                Asia's premier matchmaking agency since 2004.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-sans text-xs uppercase tracking-[0.2em] mb-4">Company</h4>
-              <ul className="space-y-2 font-sans text-sm text-primary-foreground/60">
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">The Methodology</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Success Stories</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Press</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-sans text-xs uppercase tracking-[0.2em] mb-4">Services</h4>
-              <ul className="space-y-2 font-sans text-sm text-primary-foreground/60">
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Matchmaking</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Date Coaching</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">The Collective</a></li>
-                <li><a href="#" className="hover:text-primary-foreground transition-colors">Events</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-sans text-xs uppercase tracking-[0.2em] mb-4">Contact</h4>
-              <ul className="space-y-2 font-sans text-sm text-primary-foreground/60">
-                <li>Singapore · Hong Kong</li>
-                <li>Bangkok · Japan</li>
-                <li className="pt-2"><a href="#" className="hover:text-primary-foreground transition-colors">hello@lunchactually.com</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
-          <p className="font-sans text-xs text-primary-foreground/40">
-            © 2024 Lunch Actually Group. All rights reserved.
+          <p className="font-sans text-sm text-muted-foreground max-w-lg mt-6 leading-relaxed">
+            Exclusivity isn't about keeping people out; it's about bringing the
+            right people together. Our private intake is a delicate orchestration
+            of shared values, verified legacy, and unspoken understanding.
           </p>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pt-6 border-t border-border">
+          <div>
+            <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-foreground mb-1">
+              LUNCH ACTUALLY PTE LTD
+            </p>
+            <p className="font-sans text-[10px] uppercase tracking-[0.15em] text-muted-foreground">
+              SINGAPORE · HONG KONG · THAILAND · TAIWAN · INDONESIA · MALAYSIA
+            </p>
+          </div>
+          <div className="flex items-center gap-8">
+            <a href="#" className="font-sans text-xs uppercase tracking-[0.1em] text-foreground hover:text-primary transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="font-sans text-xs uppercase tracking-[0.1em] text-foreground hover:text-primary transition-colors">
+              Terms of Entry
+            </a>
+            <a href="#" className="font-sans text-xs uppercase tracking-[0.1em] text-foreground hover:text-primary transition-colors">
+              Press
+            </a>
+            <span className="flex items-center gap-1.5 font-sans text-[10px] uppercase tracking-[0.1em] text-muted-foreground">
+              <Lock className="w-3 h-3" />
+              SECURE APPLICATION PORTAL
+            </span>
+          </div>
         </div>
       </div>
     </footer>
