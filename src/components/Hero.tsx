@@ -1,4 +1,9 @@
 import heroImage from "@/assets/hero.png";
+import avatar1 from "@/assets/trust-avatar-1.png";
+import avatar2 from "@/assets/trust-avatar-2.png";
+import avatar3 from "@/assets/trust-avatar-3.png";
+
+const avatars = [avatar1, avatar2, avatar3];
 
 const Hero = () => {
   return (
@@ -65,10 +70,12 @@ const Hero = () => {
           {/* Trust badge */}
           <div className="flex items-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: "0.6s" }}>
             <div className="flex -space-x-2">
-              {[1, 2, 3].map((i) => (
-                <div
+              {avatars.map((src, i) => (
+                <img
                   key={i}
-                  className="w-9 h-9 rounded-full bg-muted border-2 border-background"
+                  src={src}
+                  alt="Member"
+                  className="w-9 h-9 rounded-full object-cover border-2 border-background"
                 />
               ))}
             </div>
