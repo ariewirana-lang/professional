@@ -1,23 +1,17 @@
-import couple1 from "@/assets/success-couple-1.jpg";
-import couple2 from "@/assets/success-couple-2.jpg";
-import couple3 from "@/assets/success-couple-3.jpg";
+import thumb1 from "@/assets/video-thumb-1.jpg";
+import thumb2 from "@/assets/video-thumb-2.jpg";
 import { Play, ChevronLeft, ChevronRight } from "lucide-react";
 
 const stories = [
   {
-    image: couple1,
+    image: thumb1,
     quote:
       "Thank you for bringing us together. It's the best decision I ever made.",
   },
   {
-    image: couple2,
+    image: thumb2,
     quote:
       "We are immensely grateful for finding the right one at the right time.",
-  },
-  {
-    image: couple3,
-    quote:
-      "The personal touch made all the difference. They matched personalities and life goals.",
   },
 ];
 
