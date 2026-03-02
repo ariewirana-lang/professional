@@ -25,7 +25,7 @@ const stories = [
 
 const SuccessStories = () => {
   return (
-    <section className="py-24 md:py-32">
+    <section id="collective" className="py-24 md:py-32">
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16">

@@ -53,7 +53,7 @@ const Hero = () => {
               Selection
             </a>
             <a
-              href="#apply"
+              href="#collective"
               className="inline-flex items-center justify-center font-sans text-[10px] font-semibold uppercase tracking-[0.15em] text-foreground px-4 py-4 hover:text-primary transition-colors duration-300 text-center"
             >
               Our Success
