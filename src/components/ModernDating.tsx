@@ -1,5 +1,5 @@
 import { MonitorSmartphone, Ghost, Cat, ShieldCheck, MapPin, Sparkles } from "lucide-react";
-import coupleImage from "@/assets/why-la-couple.jpg";
+import coupleImage from "@/assets/solution-couple.jpg";
 
 const challenges = [
   {
