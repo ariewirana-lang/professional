@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Right half - hero image, no overlay */}
-      <div className="absolute top-0 right-0 bottom-0 w-full md:w-1/2">
+      <div className="absolute top-0 right-0 bottom-0 w-full md:w-1/2 flex items-start justify-center">
         <img
           src={heroImage}
           alt="Elegant couple"
