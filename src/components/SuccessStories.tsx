@@ -1,23 +1,25 @@
 import couple1 from "@/assets/success-couple-1.jpg";
 import couple2 from "@/assets/success-couple-2.jpg";
 import couple3 from "@/assets/success-couple-3.jpg";
-import { Play, ChevronLeft, ChevronRight } from "lucide-react";
 
 const stories = [
   {
     image: couple1,
-    quote:
-      "Thank you for bringing us together. It's the best decision I ever made.",
+    number: "I",
+    names: "Michelle & Chris",
+    year: "UNITED IN 2022",
   },
   {
     image: couple2,
-    quote:
-      "We are immensely grateful for finding the right one at the right time.",
+    number: "II",
+    names: "Mengwei & Cindy",
+    year: "UNITED IN 2023",
   },
   {
     image: couple3,
-    quote:
-      "The personal touch made all the difference. They matched personalities and life goals.",
+    number: "III",
+    names: "Alex & Ashley",
+    year: "UNITED IN 2024",
   },
 ];
 
@@ -28,59 +30,46 @@ const SuccessStories = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-[11px] font-sans uppercase tracking-[0.3em] text-gold mb-6">
-            MEDIA & SUCCESS
+            THE PRIVATE COLLECTION
           </span>
-          <h2 className="text-3xl md:text-5xl font-serif italic leading-tight">
-            Authentic Connections,
-          </h2>
-          <h2 className="text-3xl md:text-5xl font-serif italic leading-tight">
-            Proven Authority
+          <h2 className="text-4xl md:text-5xl font-serif italic leading-tight mb-0">
+            Success Stories
           </h2>
           <div className="w-12 h-[2px] bg-gold mx-auto mt-6 mb-6" />
-          <p className="font-sans text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Discover the stories of elite singles who found their perfect match through our
-            bespoke consultancy and our recognized presence in international media.
+          <p className="font-serif italic text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            "Curated matches for those who understand that time is life's ultimate luxury."
           </p>
         </div>
 
-        {/* Success Stories label + arrows */}
-        <div className="flex items-center justify-between mb-6">
-          <h3 className="font-serif italic text-lg">Success Stories</h3>
-          <div className="flex gap-2">
-            <button className="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
-              <ChevronLeft className="w-4 h-4" />
-            </button>
-            <button className="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-
-        {/* Video cards — show first 2 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {stories.slice(0, 2).map((story, i) => (
-            <div key={i} className="relative group overflow-hidden">
-              <img
-                src={story.image}
-                alt="Success story"
-                className="w-full aspect-video object-cover"
-              />
-              {/* Play button */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-14 h-14 rounded-full bg-background/80 flex items-center justify-center">
-                  <Play className="w-5 h-5 text-foreground ml-0.5" fill="currentColor" />
-                </div>
+        {/* 3-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {stories.map((story) => (
+            <div key={story.number} className="text-center">
+              <div className="overflow-hidden mb-5">
+                <img
+                  src={story.image}
+                  alt={story.names}
+                  className="w-full aspect-[3/4] object-cover"
+                />
               </div>
-              {/* Quote overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="bg-primary/80 backdrop-blur-sm px-5 py-4 rounded-sm">
-                  <p className="font-sans text-sm text-primary-foreground leading-relaxed">
-                    "{story.quote}"
-                  </p>
-                </div>
-              </div>
+              <h3 className="font-serif italic text-base md:text-lg mb-1">
+                {story.number}. {story.names}
+              </h3>
+              <span className="text-[10px] font-sans uppercase tracking-[0.2em] text-muted-foreground">
+                {story.year}
+              </span>
             </div>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center">
+          <a
+            href="#apply"
+            className="inline-block bg-foreground text-background font-sans text-xs uppercase tracking-[0.2em] px-10 py-4 hover:bg-foreground/90 transition-colors"
+          >
+            Connect with a Matchmaker
+          </a>
         </div>
       </div>
     </section>
