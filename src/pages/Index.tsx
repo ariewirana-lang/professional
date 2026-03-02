@@ -10,7 +10,7 @@ import ModernDating from "@/components/ModernDating";
 import ThreeSteps from "@/components/ThreeSteps";
 import WhyLunchActually from "@/components/WhyLunchActually";
 import SuccessStories from "@/components/SuccessStories";
-import CTASection from "@/components/CTASection";
+
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -28,7 +28,7 @@ const Index = () => {
       <ThreeSteps />
       <WhyLunchActually />
       <SuccessStories />
-      <CTASection />
+      
       <Footer />
     </div>
   );
