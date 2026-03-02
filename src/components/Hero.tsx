@@ -45,7 +45,7 @@ const Hero = () => {
 
           <div className="flex flex-wrap items-center gap-4 mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.5s" }}>
             <a
-              href="#"
+              href="#apply"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground font-sans text-[10px] font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded-full hover:bg-primary/90 transition-colors duration-300"
             >
               Apply for
@@ -53,7 +53,7 @@ const Hero = () => {
               Selection
             </a>
             <a
-              href="#"
+              href="#apply"
               className="inline-flex items-center justify-center font-sans text-[10px] font-semibold uppercase tracking-[0.15em] text-foreground px-4 py-4 hover:text-primary transition-colors duration-300 text-center"
             >
               Our Success
