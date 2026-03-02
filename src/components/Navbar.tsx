@@ -1,7 +1,12 @@
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
-  const links = ["The Methodology", "Portfolio", "The Collective", "Membership Inquiry"];
+  const links = [
+    { label: "The Methodology", href: "#methodology" },
+    { label: "Portfolio", href: "#portfolio" },
+    { label: "The Collective", href: "#collective" },
+    { label: "Membership Inquiry", href: "#apply" },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
@@ -11,12 +16,12 @@ const Navbar = () => {
         </a>
         <ul className="hidden md:flex items-center gap-8">
           {links.map((link) => (
-            <li key={link}>
+            <li key={link.label}>
               <a
-                href="#"
+                href={link.href}
                 className="text-xs font-sans font-medium uppercase tracking-[0.15em] text-foreground/70 hover:text-primary transition-colors duration-300"
               >
-                {link}
+                {link.label}
               </a>
             </li>
           ))}
