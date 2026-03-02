@@ -14,7 +14,7 @@ const CTASection = () => {
             complimentary consultation with our senior matchmaker.
           </p>
           <a
-            href="#"
+            href="#apply"
             className="inline-flex items-center justify-center bg-primary text-primary-foreground font-sans text-xs font-semibold uppercase tracking-[0.2em] px-12 py-4 hover:bg-primary/90 transition-colors duration-300"
           >
             APPLY FOR SELECTION

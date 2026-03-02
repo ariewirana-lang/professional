@@ -22,7 +22,7 @@ const ApplyForm = () => {
   };
 
   return (
-    <section className="relative min-h-[700px] flex">
+    <section id="apply" className="relative min-h-[700px] flex">
       {/* Left — background image + heading */}
       <div className="hidden md:flex w-1/2 relative items-end">
         <img
