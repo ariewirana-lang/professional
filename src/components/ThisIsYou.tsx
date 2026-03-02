@@ -1,40 +1,59 @@
-import maleImage from "@/assets/this-is-you-male.jpg";
+import maleImage from "@/assets/client-male.jpg";
+import femaleImage from "@/assets/client-female.jpg";
 
 const ThisIsYou = () => {
   return (
-    <section className="relative min-h-screen bg-[hsl(240,10%,8%)] flex flex-col items-center justify-center text-center overflow-hidden px-6 py-24">
-      {/* Background man image */}
-      <img
-        src={maleImage}
-        alt="Professional man"
-        className="absolute inset-0 w-full h-full object-contain object-center opacity-90 pointer-events-none"
-      />
+    <section className="py-24 md:py-32 bg-secondary/30">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-end">
+          {/* Female photo — offset down */}
+          <div className="md:mt-24">
+            <img
+              src={femaleImage}
+              alt="Client No. 042"
+              className="w-full aspect-[3/4] object-cover object-top"
+            />
+            <p className="text-[9px] font-sans uppercase tracking-[0.25em] text-muted-foreground mt-3">
+              Client No. 042
+            </p>
+          </div>
 
-      {/* Content overlay */}
-      <div className="relative z-10 max-w-md mx-auto">
-        <p className="text-[9px] font-sans uppercase tracking-[0.35em] text-white/40 mb-6">
-          Private · Curated · Purposeful
-        </p>
-        <h2 className="text-5xl md:text-7xl font-serif text-white leading-[1.1] mb-8">
-          This <em className="italic">is</em> You
-        </h2>
-        <p className="font-serif text-white/70 text-sm md:text-base leading-relaxed mb-4 italic">
-          Intelligent, successful, and sincere. You have built a life of
-          achievement, and now you seek a partner to share it with.
-        </p>
-        <p className="font-sans text-white/50 text-xs md:text-sm leading-relaxed mb-10">
-          As the region's premier matchmaking authority, we provide access
-          to an <span className="text-white/80 font-medium">exclusive, verified database</span> of Singapore's most eligible singles.
-        </p>
-        <a
-          href="#"
-          className="inline-flex items-center justify-center bg-primary text-primary-foreground font-sans text-[10px] font-semibold uppercase tracking-[0.2em] px-10 py-4 rounded-full hover:bg-primary/90 transition-colors duration-300"
-        >
-          Inquire for Membership
-        </a>
-        <p className="text-[8px] font-sans uppercase tracking-[0.2em] text-white/30 mt-6">
-          By Invitation Only · Since 2004
-        </p>
+          {/* Male photo — aligned top */}
+          <div>
+            <img
+              src={maleImage}
+              alt="Client No. 087"
+              className="w-full aspect-[3/4] object-cover object-top"
+            />
+            <p className="text-[9px] font-sans uppercase tracking-[0.25em] text-muted-foreground mt-3">
+              Client No. 087
+            </p>
+          </div>
+
+          {/* Text content */}
+          <div className="flex flex-col justify-center">
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-serif leading-[0.95] mb-2">
+              This is
+            </h2>
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-serif italic leading-[0.95] mb-10">
+              You
+            </h2>
+            <p className="font-serif text-foreground/80 text-base md:text-lg leading-relaxed mb-8">
+              Intelligent, successful, and sincere. You have
+              built a life of achievement, and now you seek
+              a partner of equal stature.
+            </p>
+            <div className="w-full h-px bg-border mb-8" />
+            <p className="font-sans text-muted-foreground text-sm leading-relaxed">
+              Access an{" "}
+              <span className="text-foreground font-medium underline underline-offset-2">
+                exclusive, verified database
+              </span>{" "}
+              of the most eligible
+              elite singles across the continent.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
