@@ -2,7 +2,7 @@ import heroImage from "@/assets/hero.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative overflow-hidden" style={{ minHeight: '1737px' }}>
       {/* Right half - hero image, no overlay */}
       <div className="absolute top-0 right-0 bottom-0 w-full md:w-1/2">
         <img
