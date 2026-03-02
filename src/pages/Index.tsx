@@ -10,6 +10,7 @@ import ModernDating from "@/components/ModernDating";
 import ThreeSteps from "@/components/ThreeSteps";
 import WhyLunchActually from "@/components/WhyLunchActually";
 import SuccessStories from "@/components/SuccessStories";
+import MediaSuccess from "@/components/MediaSuccess";
 
 import Footer from "@/components/Footer";
 
@@ -28,6 +29,7 @@ const Index = () => {
       <ThreeSteps />
       <WhyLunchActually />
       <SuccessStories />
+      <MediaSuccess />
       
       <Footer />
     </div>
