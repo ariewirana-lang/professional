@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Press from "@/components/Press";
+import ApplyForm from "@/components/ApplyForm";
 import ExclusiveCircle from "@/components/ExclusiveCircle";
 import ThisIsYou from "@/components/ThisIsYou";
 import MemberProfiles from "@/components/MemberProfiles";
@@ -19,6 +20,7 @@ const Index = () => {
       <Hero />
       <Stats />
       <Press />
+      <ApplyForm />
       <ExclusiveCircle />
       <ThisIsYou />
       <MemberProfiles />
