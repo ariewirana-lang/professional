@@ -1,87 +1,42 @@
 import maleImage from "@/assets/this-is-you-male.jpg";
-import femaleImage from "@/assets/this-is-you-female.jpg";
 
 const ThisIsYou = () => {
   return (
-    <>
-      {/* Male section */}
-      <section className="py-24 md:py-32">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="order-2 md:order-1">
-              <img
-                src={maleImage}
-                alt="This is You"
-                className="w-full max-w-md mx-auto object-cover aspect-[3/4]"
-              />
-            </div>
-            <div className="order-1 md:order-2 max-w-lg">
-              <p className="text-[10px] font-sans uppercase tracking-[0.25em] text-muted-foreground mb-6">
-                Our Ideal Member
-              </p>
-              <h2 className="text-5xl md:text-6xl font-serif mb-8">
-                This is You
-              </h2>
-              <p className="font-sans text-muted-foreground leading-relaxed mb-6">
-                You're a discerning professional who values quality over quantity. 
-                You've achieved success in your career but recognize that finding 
-                a life partner deserves the same intentional approach.
-              </p>
-              <p className="font-sans text-muted-foreground leading-relaxed mb-8">
-                You believe in meaningful connections built on shared values, 
-                mutual respect, and genuine compatibility — not algorithms.
-              </p>
-              <ul className="space-y-3 font-sans text-sm text-muted-foreground">
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                  Established professionals aged 28–50
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                  University-educated with strong values
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                  Seeking a serious, long-term relationship
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section className="relative min-h-screen bg-[hsl(240,10%,8%)] flex flex-col items-center justify-center text-center overflow-hidden px-6 py-24">
+      {/* Background man image */}
+      <img
+        src={maleImage}
+        alt="Professional man"
+        className="absolute inset-0 w-full h-full object-contain object-center opacity-90 pointer-events-none"
+      />
 
-      {/* Female section */}
-      <section className="py-24 md:py-32 bg-secondary/50">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="max-w-lg">
-              <h2 className="text-5xl md:text-7xl font-serif mb-2">
-                This is
-              </h2>
-              <h2 className="text-5xl md:text-7xl font-serif italic text-primary mb-8">
-                You
-              </h2>
-              <p className="font-sans text-muted-foreground leading-relaxed mb-6">
-                You're accomplished, vibrant, and ready for a meaningful chapter 
-                in your life. You've grown tired of dating apps and superficial 
-                encounters that lead nowhere.
-              </p>
-              <p className="font-sans text-muted-foreground leading-relaxed">
-                You want someone who truly understands your aspirations and 
-                complements your journey — a partner selected with care, not chance.
-              </p>
-            </div>
-            <div>
-              <img
-                src={femaleImage}
-                alt="This is You"
-                className="w-full max-w-md mx-auto object-cover aspect-[3/4]"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+      {/* Content overlay */}
+      <div className="relative z-10 max-w-md mx-auto">
+        <p className="text-[9px] font-sans uppercase tracking-[0.35em] text-white/40 mb-6">
+          Private · Curated · Purposeful
+        </p>
+        <h2 className="text-5xl md:text-7xl font-serif text-white leading-[1.1] mb-8">
+          This <em className="italic">is</em> You
+        </h2>
+        <p className="font-serif text-white/70 text-sm md:text-base leading-relaxed mb-4 italic">
+          Intelligent, successful, and sincere. You have built a life of
+          achievement, and now you seek a partner to share it with.
+        </p>
+        <p className="font-sans text-white/50 text-xs md:text-sm leading-relaxed mb-10">
+          As the region's premier matchmaking authority, we provide access
+          to an <span className="text-white/80 font-medium">exclusive, verified database</span> of Singapore's most eligible singles.
+        </p>
+        <a
+          href="#"
+          className="inline-flex items-center justify-center bg-primary text-primary-foreground font-sans text-[10px] font-semibold uppercase tracking-[0.2em] px-10 py-4 rounded-full hover:bg-primary/90 transition-colors duration-300"
+        >
+          Inquire for Membership
+        </a>
+        <p className="text-[8px] font-sans uppercase tracking-[0.2em] text-white/30 mt-6">
+          By Invitation Only · Since 2004
+        </p>
+      </div>
+    </section>
   );
 };
 
