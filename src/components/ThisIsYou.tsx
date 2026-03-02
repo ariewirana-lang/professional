@@ -3,7 +3,7 @@ import femaleImage from "@/assets/client-female.jpg";
 
 const ThisIsYou = () => {
   return (
-    <section className="py-24 md:py-32 bg-secondary/30">
+    <section className="pt-32 pb-24 md:pt-48 md:pb-32 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
           {/* Female photo — offset down, spans 3 cols */}
