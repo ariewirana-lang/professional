@@ -110,7 +110,7 @@ const Footer = () => {
       </section>
 
       {/* Chapter IV section */}
-      <div className="py-16 border-t border-border">
+      <div className="pt-32 pb-16 border-t border-border">
         <div className="container mx-auto px-6">
           <div className="mb-16">
             <span className="inline-block text-[10px] font-sans uppercase tracking-[0.25em] text-gold mb-4">
