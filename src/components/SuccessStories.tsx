@@ -25,7 +25,7 @@ const stories = [
 
 const SuccessStories = () => {
   return (
-    <section id="collective" className="pt-24 md:pt-32 pb-[35px]">
+    <section id="collective" className="pt-[35px] pb-[35px]">
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16">
