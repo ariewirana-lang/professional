@@ -1,4 +1,5 @@
 import { Lock, ArrowRight, ShieldCheck } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import luxuryImage from "@/assets/luxury-invitation.jpg";
 
 const Footer = () => {
