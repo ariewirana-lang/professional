@@ -14,7 +14,7 @@ const logos = [
 
 const Press = () => {
   return (
-    <section className="py-16 border-t border-border">
+    <section className="py-[35px] border-t border-border">
       <div className="container mx-auto px-6">
         <p className="text-[10px] font-sans uppercase tracking-[0.25em] text-muted-foreground text-center mb-12">
           The Premier Circle as Noted By
