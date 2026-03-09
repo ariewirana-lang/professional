@@ -35,7 +35,7 @@ const steps = [
 
 const ThreeSteps = () => {
   return (
-    <section className="py-24 md:py-32 bg-secondary/20">
+    <section className="pt-24 md:pt-32 pb-[35px] bg-secondary/20">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-6">
