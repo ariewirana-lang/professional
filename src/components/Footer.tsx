@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import luxuryImage from "@/assets/luxury-invitation.jpg";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer>
       {/* Two-column: Image + Form */}
