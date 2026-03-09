@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { ShieldCheck, Lock } from "lucide-react";
 import overlayBg from "@/assets/overlay-bg.png";
 
