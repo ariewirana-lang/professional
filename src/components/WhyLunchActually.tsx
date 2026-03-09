@@ -43,7 +43,7 @@ const reasons = [
 
 const WhyLunchActually = () => {
   return (
-    <section className="pt-24 md:pt-32 pb-[35px]">
+    <section className="pt-[35px] pb-[35px]">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left — Image + Testimonial */}
