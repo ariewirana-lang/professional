@@ -17,7 +17,7 @@ const stories = [
 
 const MediaSuccess = () => {
   return (
-    <section className="pt-[35px] pb-24 md:pb-32">
+    <section className="py-[35px]">
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16">

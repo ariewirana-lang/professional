@@ -30,7 +30,7 @@ const solutions = [
 
 const ModernDating = () => {
   return (
-    <section id="methodology" className="pt-24 md:pt-32 pb-[35px] bg-background">
+    <section id="methodology" className="py-[35px] bg-background">
       {/* Header */}
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
