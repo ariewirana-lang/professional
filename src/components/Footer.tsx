@@ -78,7 +78,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <button className="w-full bg-primary text-primary-foreground font-sans text-xs font-semibold uppercase tracking-[0.2em] py-4 flex items-center justify-center gap-3 hover:bg-primary/90 transition-colors mb-10">
+          <button
+            onClick={() => navigate("/thank-you")}
+            className="w-full bg-primary text-primary-foreground font-sans text-xs font-semibold uppercase tracking-[0.2em] py-4 flex items-center justify-center gap-3 hover:bg-primary/90 transition-colors mb-10"
+          >
             INITIATE INQUIRY
             <ArrowRight className="w-4 h-4" />
           </button>
