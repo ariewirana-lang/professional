@@ -59,7 +59,7 @@ const Hero = () => {
       </div>
 
       {/* Left half - content */}
-      <div className="relative z-10 min-h-screen flex items-center">
+      <div className="relative z-10 min-h-screen flex items-end md:items-end pb-32 md:pb-48">
         <div className="w-full md:w-1/2 px-10 md:px-16 lg:px-24 py-32">
           {/* Location tags - two rows */}
           <div className="mb-2 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
