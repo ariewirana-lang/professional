@@ -4,6 +4,7 @@ import { ShieldCheck, Lock } from "lucide-react";
 import overlayBg from "@/assets/overlay-bg.png";
 
 const ApplyForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
