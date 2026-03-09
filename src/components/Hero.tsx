@@ -59,8 +59,8 @@ const Hero = () => {
       </div>
 
       {/* Left half - content */}
-      <div className="relative z-10 min-h-screen flex items-center">
-        <div className="w-full md:w-1/2 px-10 md:px-16 lg:px-24 py-32 md:pt-48">
+      <div className="relative z-10 min-h-screen flex items-start md:items-center">
+        <div className="w-full md:w-1/2 px-10 md:px-16 lg:px-24 py-32 md:py-0">
           {/* Location tags - two rows */}
           <div className="mb-2 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <span className="text-[10px] font-sans font-medium uppercase tracking-[0.2em] text-muted-foreground">
