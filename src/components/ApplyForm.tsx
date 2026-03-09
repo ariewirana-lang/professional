@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { ShieldCheck, Lock } from "lucide-react";
 import overlayBg from "@/assets/overlay-bg.png";
 
 const ApplyForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -15,6 +17,7 @@ const ApplyForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    navigate("/thank-you");
   };
 
   const handleChange = (field: string, value: string) => {
