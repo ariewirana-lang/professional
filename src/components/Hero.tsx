@@ -15,6 +15,47 @@ const Hero = () => {
           alt="Elegant couple"
           className="w-full h-full object-cover object-top"
         />
+        
+        {/* Mobile only: CTA buttons and trust badge at bottom of image */}
+        <div className="absolute bottom-8 left-0 right-0 px-6 md:hidden">
+          <div className="flex flex-wrap items-center gap-4 mb-6 opacity-0 animate-fade-up" style={{ animationDelay: "0.5s" }}>
+            <a
+              href="#apply"
+              className="inline-flex items-center justify-center bg-primary text-primary-foreground font-sans text-[10px] font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded-full hover:bg-primary/90 transition-colors duration-300"
+            >
+              Apply for
+              <br />
+              Selection
+            </a>
+            <a
+              href="#collective"
+              className="inline-flex items-center justify-center font-sans text-[10px] font-semibold uppercase tracking-[0.15em] text-white px-4 py-4 hover:text-primary transition-colors duration-300 text-center"
+            >
+              Our Success
+              <br />
+              Stories
+            </a>
+          </div>
+
+          {/* Trust badge */}
+          <div className="flex items-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: "0.6s" }}>
+            <div className="flex -space-x-2">
+              {avatars.map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt="Member"
+                  className="w-9 h-9 rounded-full object-cover border-2 border-background"
+                />
+              ))}
+            </div>
+            <p className="text-[9px] font-sans uppercase tracking-[0.15em] text-white/80 leading-relaxed">
+              Trusted by over
+              <br />
+              170k professionals
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Left half - content */}
@@ -42,13 +83,14 @@ const Hero = () => {
             Agency
           </h1>
 
-          <p className="font-sans text-[15px] text-muted-foreground max-w-[340px] mb-10 opacity-0 animate-fade-up leading-[1.7]" style={{ animationDelay: "0.4s" }}>
+          <p className="font-sans text-[15px] text-muted-foreground max-w-[340px] mb-10 md:mb-10 opacity-0 animate-fade-up leading-[1.7]" style={{ animationDelay: "0.4s" }}>
             An exclusive matchmaking circle for Singapore
             professionals seeking profound connections
             and shared legacies.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.5s" }}>
+          {/* Desktop only: CTA buttons */}
+          <div className="hidden md:flex flex-wrap items-center gap-4 mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.5s" }}>
             <a
               href="#apply"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground font-sans text-[10px] font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded-full hover:bg-primary/90 transition-colors duration-300"
@@ -67,8 +109,8 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Trust badge */}
-          <div className="flex items-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: "0.6s" }}>
+          {/* Desktop only: Trust badge */}
+          <div className="hidden md:flex items-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: "0.6s" }}>
             <div className="flex -space-x-2">
               {avatars.map((src, i) => (
                 <img
