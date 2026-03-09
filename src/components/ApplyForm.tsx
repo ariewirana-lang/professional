@@ -17,6 +17,7 @@ const ApplyForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    navigate("/thank-you");
   };
 
   const handleChange = (field: string, value: string) => {
