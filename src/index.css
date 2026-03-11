@@ -93,6 +93,3 @@
     @apply font-serif;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
