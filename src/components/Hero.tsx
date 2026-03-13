@@ -25,7 +25,7 @@ const Hero = () => {
         />
         
         {/* Mobile only: CTA buttons and trust badge at bottom of image */}
-        <div className="absolute bottom-8 left-0 right-0 px-6 md:hidden">
+        <div className="absolute bottom-8 left-0 right-0 px-6 md:hidden z-20">
           <div className="flex flex-wrap items-center gap-4 mb-6 opacity-0 animate-fade-up" style={{ animationDelay: "0.5s" }}>
             <a
               href="#apply"
