@@ -7,7 +7,7 @@ const avatars = [avatar1, avatar2, avatar3];
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden" style={{ minHeight: '1737px' }}>
+    <section className="relative overflow-hidden" style={{ minHeight: '1249px' }}>
       {/* Right half - hero image, no overlay */}
       <div className="absolute top-0 right-0 bottom-0 w-full md:w-1/2">
         <img
