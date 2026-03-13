@@ -62,12 +62,12 @@ const Hero = () => {
       <div className="relative z-10 min-h-screen flex items-start md:items-end">
         <div className="w-full md:w-1/2 px-10 md:px-16 lg:px-24 py-32 md:pb-40 md:pt-0">
           {/* Location tags - two rows */}
-          <div className="mb-2 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <div className="hidden md:block mb-2 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <span className="text-[10px] font-sans font-medium uppercase tracking-[0.2em] text-muted-foreground">
               Singapore&nbsp;&nbsp;&nbsp;Hong Kong&nbsp;&nbsp;&nbsp;Bangkok&nbsp;&nbsp;&nbsp;Taipei
             </span>
           </div>
-          <div className="mb-10 opacity-0 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+          <div className="hidden md:block mb-10 opacity-0 animate-fade-up" style={{ animationDelay: "0.15s" }}>
             <span className="text-[10px] font-sans font-medium uppercase tracking-[0.2em] text-muted-foreground">
               Jakarta&nbsp;&nbsp;&nbsp;Kuala Lumpur
             </span>
