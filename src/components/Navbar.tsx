@@ -11,7 +11,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="/" className="flex-shrink-0">
+        <a
+          href="#"
+          onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+          className="flex-shrink-0"
+        >        
           <img src={logo} alt="Lunch Actually" className="h-8 md:h-10" />
         </a>
         <ul className="hidden md:flex items-center gap-8">
