@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero2.png";
+import heroMobileImage from "@/assets/hero2.png";
 import avatar1 from "@/assets/trust-avatar-1.png";
 import avatar2 from "@/assets/trust-avatar-2.png";
 import avatar3 from "@/assets/trust-avatar-3.png";
@@ -8,13 +9,19 @@ const avatars = [avatar1, avatar2, avatar3];
 const Hero = () => {
   return (
 <section className="relative overflow-hidden min-h-[800px] md:min-h-[1249px]">
-        
       {/* Right half - hero image, no overlay */}
       <div className="absolute top-0 right-0 bottom-0 w-full md:w-1/2">
+        {/* Desktop hero image */}
         <img
           src={heroImage}
           alt="Elegant couple"
-          className="w-full h-full object-cover object-top"
+          className="hidden md:block w-full h-full object-cover object-top"
+        />
+        {/* Mobile hero image */}
+        <img
+          src={heroMobileImage}
+          alt="Elegant couple"
+          className="block md:hidden w-full h-full object-cover object-top"
         />
         
         {/* Mobile only: CTA buttons and trust badge at bottom of image */}
