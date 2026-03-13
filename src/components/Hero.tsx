@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero.png";
+import heroImage from "@/assets/hero2.png";
 import avatar1 from "@/assets/trust-avatar-1.png";
 import avatar2 from "@/assets/trust-avatar-2.png";
 import avatar3 from "@/assets/trust-avatar-3.png";
