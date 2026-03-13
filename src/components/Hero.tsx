@@ -82,8 +82,7 @@ const Hero = () => {
           </div>
 
           <h1 className="hidden md:block text-[3rem] md:text-[3.8rem] lg:text-[4.5rem] font-serif leading-[1.05] text-foreground mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
-              
-            Singapore's
+          Singapore's
             <br />
             Leading
             <br />
@@ -92,7 +91,7 @@ const Hero = () => {
             Agency
           </h1>
 
-          <p className="font-sans text-[15px] text-muted-foreground max-w-[340px] mb-10 md:mb-10 opacity-0 animate-fade-up leading-[1.7]" style={{ animationDelay: "0.4s" }}>
+         <p className="hidden md:block font-sans text-[15px] text-muted-foreground max-w-[340px] mb-10 md:mb-10 opacity-0 animate-fade-up leading-[1.7]" style={{ animationDelay: "0.4s" }}>
             An exclusive matchmaking circle for Singapore
             professionals seeking profound connections
             and shared legacies.
