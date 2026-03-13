@@ -73,7 +73,8 @@ const Hero = () => {
             </span>
           </div>
 
-          <h1 className="text-[3rem] md:text-[3.8rem] lg:text-[4.5rem] font-serif leading-[1.05] text-foreground mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
+          <h1 className="hidden md:block text-[3rem] md:text-[3.8rem] lg:text-[4.5rem] font-serif leading-[1.05] text-foreground mb-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.25s" }}>
+              
             Singapore's
             <br />
             Leading
